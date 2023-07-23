@@ -1,0 +1,68 @@
+<?php
+    $pythonPath = "C:\\Users\\91630\\AppData\\Local\\Programs\\Python\\Python311\\pythonw.exe"; //python interpreter
+    $NegtiveScript = 'C:\xampp\new\htdocs\miniproject\khasim\python\sysnopsys_neg.py'; //python file path
+    exec($pythonPath.' '.$NegtiveScript, $NegativeOutput); // Corrected exec() command
+    // echo $mindtreePositiveOutput;
+    $s="-->";
+    $k=0;
+    foreach($NegativeOutput as $line){
+      if($k<35){
+        echo '<p>'.$s.' '.$line.'</p>';
+      }
+      $k+=1;
+        
+    }
+?>
+<?php
+    $pythonPath = "C:\\Users\\91630\\AppData\\Local\\Programs\\Python\\Python311\\pythonw.exe"; //python interpreter
+    $NeturalScript = 'C:\xampp\new\htdocs\miniproject\khasim\python\replicon_netural.py'; //python file path
+    exec($pythonPath.' '.$NeturalScript, $NeturalOutput); // Corrected exec() command
+    // echo $mindtreePositiveOutput;
+    $s="-->";
+    $k=0;
+    foreach($NeturalOutput as $line){
+      if($k<35){
+        echo '<p>'.$s.' '.$line.'</p>';
+      }
+      $k+=1;
+        
+    }
+?>
+
+
+<?php
+    $pythonPath = "C:\\Users\\91630\\AppData\\Local\\Programs\\Python\\Python311\\pythonw.exe"; //python interpreter
+    $PositiveScript = 'C:\xampp\new\htdocs\miniproject\khasim\python\sysnopsys_pos.py'; //python file path
+    exec($pythonPath.' '.$PositiveScript, $PositiveOutput); // Corrected exec() command
+    // echo $mindtreePositiveOutput;
+    $s="-->";
+    $k=0;
+    foreach($PositiveOutput as $line){
+      if($k<35){
+        echo '<p>'.$s.' '.$line.'</p>';
+      }
+      $k+=1;
+        
+    }
+?>
+
+
+import sqlite3
+conn=sqlite3.connect(r'C:\xampp\new\htdocs\miniproject\khasim\python\miniproject.db')
+cursor=conn.execute("SELECT Reviews FROM analogdevices  WHERE sentiment=='Netural'")
+rows=cursor.fetchall()
+# print(len(rows))
+# for output
+for row in rows:
+    print(row[0])
+cursor.close()
+conn.close()
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+   background-image: url('search.png');
+  background-position:10px 3px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  color:rgb(7, 0, 0);
+  padding: 15px 30px 15px 60px;
+  border: 1px solid #0f0e0e;
+  margin-bottom: 12px;
+  margin-top: 5px;
+  border-radius: 15px;
+  background-color: rgb(182, 230, 243);
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+ 
+ <!-- onkeyup="myFunction() -->
+
+<input type="text" id="myInput"  placeholder="Search  here for company  names.." title="Type in a name" onkeyup="myFunction()">
+ 
+
+
+
+
+
+
+
+
+
+
+
+<!-- inserting new table here -->
+<table id="myTable">
+  <thead>
+    <tr class="header">
+      <th style="width: 60%;">Company Name</th>
+      <th style="width: 40%;">Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="AD.php">Analog Devices</a></td>
+      <td>Bengaluru</td>
+    </tr>
+    <tr>
+      <td><a href="vedanthu.php">Vedanthu</a></td>
+      <td>Maharastra</td>
+    </tr>
+    <tr>
+      <td><a href="thought works.php">Thought Works</a></td>
+      <td>Bengaluru</td>
+    </tr>
+    <tr>
+      <td><a href="byjus.php">Byjus</a></td>
+      <td>Chennai</td>
+    </tr>
+    <tr>
+      <td><a href="gridlex.php">Gridlex</a></td>
+      <td>Haryana</td>
+    </tr>
+    <tr>
+      <td><a href="HCL.php">HCL</a></td>
+      <td>Mumbai</td>
+    </tr>
+    <tr>
+      <td><a href="synopsys.php">Synopsys</a></td>
+      <td>Bengaluru</td>
+    </tr>
+    <tr>
+      <td><a href="testsigma.php">Test Sigma</a></td>
+      <td>Bengaluru</td>
+    </tr>
+    <tr>
+      <td><a href="primesoft.php">PrimeSoft</a></td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td><a href="purpulle.com.php">Purple.com</a></td>
+      <td>Mumbai</td>
+    </tr>
+    <tr>
+      <td><a href="prompt.php">PromptCloud</a></td>
+      <td>Bengaluru</td>
+    </tr>
+    <tr>
+      <td><a href="infosys.php">Infosys</a></td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td><a href="wipro.php">Wipro</a></td>
+      <td>Bengaluru</td>
+    </tr>
+    <tr>
+      <td><a href="deloitte.php">Deloitte</a></td>
+      <td>Mumbai</td>
+    </tr>
+    <tr>
+      <td><a href="ZohoCorperations.php">ZOHO</a></td>
+      <td>Chennai</td>
+    </tr>
+    <tr>
+      <td><a href="meditab.php">Meditab</a></td>
+      <td>Gujarat</td>
+    </tr>
+    <tr>
+      <td><a href="dell.php">DELL</a></td>
+      <td>Bengaluru</td>
+    </tr>
+    <tr>
+      <td> <a href="efftronics.php">Effectronix</a></td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td><a href="CodeTantra.php">Code Tantra</a></td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td><a href="wal.php">West Agile Labs</a></td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td><a href="VertexEngineering.php">Vertex Engineering</a></td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td><a href="forsys.php">Forsys</a></td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td><a href="achalaphp.php">Achala IT Solutions</a></td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td><a href="tcs.php">TCS</a></td>
+      <td>Mumbai</td>
+    </tr>
+    <tr>
+      <td> <a href="VernonTechnologies.php">Vernem</a></td>
+      <td>Chennai</td>
+    </tr>
+    <tr>
+      <td><a href="capjemini.php">Capgemini</a></td>
+      <td>Vizag</td>
+    <tr>
+      <td><a href="persistant.php">Persistent</a></td>
+      <td>Pune</td>
+    </tr>
+    <tr>
+      <td><a href="Sonata.php">Sonata</a></td>
+      <td>Bengaluru</td>
+    </tr>
+    <tr>
+      <td><a href="netenrich.php">NeternRich</a></td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td><a href="Replicon.php">Replicon</a></td>
+      <td>Bengaluru</td>
+    </tr>
+    <tr>
+      <td><a href="mindtree.php">MindTree</a></td>
+      <td>Bengaluru</td>
+    </tr>
+
+    <tr>
+      <td><a href="Randstad.php">Randstant</a></td>
+      <td>Chennai</td>
+    </tr>
+
+    <tr>
+      <td><a href="milekal.php">Milekal</a></td>
+      <td>Hyderabad</td>
+    </tr>
+
+    <tr>
+      <td><a href="TigerAnalytics.php">TigerAnalytics</a></td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td><a href="maqsoftware.php">MAQ Software</a></td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td><a href="nagarro.php">Nagarro</a></td>
+      <td>Jaipure</td>
+    </tr>
+
+    <tr>
+      <td><a href="PlanetSpark.php">PlanetSpark</a></td>
+      <td>Haryana</td>
+    </tr>
+
+    <tr>
+      <td><a href="SourceOne.php">SourceOne</a></td>
+      <td>Bengaluru</td>
+    </tr>
+
+    <tr>
+      <td>Revature</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Riktam</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Sarvani</td>
+      <td>Hyderabad</td>
+    </tr>
+     
+    <tr>
+      <td>Source one</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Srn technology services</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Technolflair solutions</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Tiger analytics</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Udyog Yantra technologies</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Vodafone Cerium-system</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Deccan chemicals</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Devathon</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Deft</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Diwali</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Eleation</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Golden hills Adeptchips</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Alacriti infosystens reviews</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Algonox company</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Apcfss</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Atibir industries Aptroid</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>ADP</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Corecompete</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Headrun</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Nspira</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>Pariksha</td>
+      <td>Hyderabad</td>
+    </tr>
+     
+     
+    <tr>
+      <td>Sails Software</td>
+      <td>Hyderabad</td>
+    </tr>
+    <tr>
+      <td>ByteXL</td>
+      <td>Hyderabad</td>
+    </tr>
+      </tbody>
+      </table>
+    
+
+
+<!-- hereis the script function -->
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>

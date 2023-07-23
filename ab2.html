@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aboutuspage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+         
+*{
+  font-family: serif;
+  max-width: 100%;
+}
+  
+.about-section {
+  padding: 40px;
+  text-align: center;
+  /* background-color: #474e5d; */
+  color: rgb(14, 13, 13);
+  background-image: linear-gradient(to right, #087EE1, #05E8BA);
+  /* background-image: linear-gradient(45deg, #087EE1, #05E8BA); */
+  /* font-size: 20 px; */
+
+} 
+
+.card{
+    border-radius:10px;
+  box-shadow: 5px 8px 8px #888888;
+}
+
+#bottomrow{
+margin-bottom: 15px;
+}
+.row{
+    margin-top: 20px;
+}
+
+img{
+    height: 350px;
+    width: 350px;
+}
+ 
+  
+
+</style>
+</head>
+<body>
+    <div class="about-section">
+        <h1>OUR MISSION</h1>
+        <p style="font-size: 20px;">Let us make students to explore more about the companies...</p>
+        <!-- <p style="font-size: 20px;">More about the companies...
+        </p> -->
+
+      </div>
+  
+      <!-- inserting remaining code here -->
+      <h1 style="text-align:center;text-shadow: 1px 1px red;">Our Team</h1>
+      <!-- <a href='secondpage.php'  class="btn btn-primary" style="float: right; margin-right: 10px;">Back</a> -->
+      <a href="secondpage.php"  class="btn btn-primary" style="float: right; margin-right: 10px;">Back</a>
+      
+
+
+      <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="container mt-3">
+                     <div class="card" style="width:400px">
+                      <img class="card-img-top" src="aboutus/prasanna.jpeg" alt="Card image" style="width:100%">
+                      <div class="card-body" style="text-align: center;">
+                        <a href="" class="btn btn-primary" id="khasim">See Profile</a>
+                        <div class="details" id="basha">
+                            <h4 class="card-title">CH.Lakshmi Prasanna</h4>
+                        <p class="card-text">Email:N180798@rguktn.ac.in</p>
+                        </div>
+                       
+                      </div>
+                    </div>
+                    
+                    
+                </div>
+                  
+            </div>
+            <div class="col-md-4">
+                <div class="container mt-3">
+                    <div class="card" style="width:400px">
+                     <img class="card-img-top" src="aboutus/keerthi.jpeg" alt="Card image" style="width:100%">
+                     <div class="card-body" style="text-align: center;">
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                       <div class="details">
+                        <h4 class="card-title">SV.Keerthi</h4>
+                        <p class="card-text">Email:N180822@rguktn.ac.in</p>
+                       </div>
+                       
+                     </div>
+                   </div>
+                   
+                   
+               </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container mt-3">
+                    <div class="card" style="width:400px">
+                     <img class="card-img-top" src="aboutus/keerthana.jpeg" alt="Card image" style="width:100%">
+                     <div class="card-body" style="text-align: center;">
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                       <div class="details">
+                        <h4 class="card-title">CH.Keerthana</h4>
+                       <p class="card-text">Email:N180137@rguktn.ac.in</p>
+                       </div>
+                       
+                     </div>
+                   </div>
+                   
+                   
+               </div>
+            </div>
+        </div>
+<!-- inserting new row -->
+     
+     <div class="row" id="bottomrow">
+        <div class="col-md-4">
+            <div class="container mt-3">
+                <div class="card" style="width:400px">
+                 <img class="card-img-top" src="aboutus/khasim.jpeg" alt="Card image" style="width:100%">
+                 <div class="card-body" style="text-align: center;">
+                    <a href="#" class="btn btn-primary" onclick="display()">See Profile</a>
+                    <div class="details">
+                         
+                        <h4 class="card-title">SK.Khasim Saheb</h4>
+                        <p class="card-text">Email:N180727@rguktn.ac.in</p>
+                    </div>
+                   
+                 </div>
+               </div>
+               
+               
+           </div>
+        </div>
+        <div class="col-md-4">
+            <div class="container mt-3">
+                <div class="card" style="width:400px">
+                 <img class="card-img-top" src="aboutus/sravani.jpeg" alt="Card image" style="width:100%">
+                 <div class="card-body" style="text-align: center;">
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                    <div class="detais mt-2">
+                        <h4 class="card-title">G.Sravani</h4>
+                   <p class="card-text">Email:N180828@rguktn.ac.in</p>
+                    </div>
+                   
+                  
+                 </div>
+               </div>
+               
+               
+           </div>
+        </div>
+        <div class="col-md-4">
+            <div class="container mt-3">
+                <div class="card" style="width:400px">
+                 <img class="card-img-top" src="aboutus/khasim.jpeg" alt="Card image" style="width:100%">
+                 <div class="card-body" style="text-align: center;">
+                  
+                   <a href="#" class="btn btn-primary">See Profile</a>
+                   <div class="details mt-2" >
+                    <h4 class="card-title">SK.Khasim Saheb</h4>
+                    <p class="card-text">Email:N180727@rguktn.ac.in</p>
+                   </div>
+                  
+                 </div>
+               </div>
+               
+               
+           </div>
+        </div>
+     </div>
+
+      </div>
+
+      
+<footer class="text-light py-4" style="background-color: #474e5d;">
+    <div class="container text-center">
+      <p>&copy; 2023 Your Company. All rights reserved.</p>
+      <ul class="list-inline mb-0">
+         
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-linkedin"></i>
+      </ul>
+    </div>
+  </footer>
+
+ 
+    
+</body>
+</html>
